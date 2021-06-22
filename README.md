@@ -6,7 +6,7 @@
 
 ![screenshot](img/Screenshot.jpg)
 
-[Online Version](https://2bleo.github.io/my-portfolio/)
+[Online Version](https://2bleo.github.io/portfolio/)
 
 
 ## Built With
