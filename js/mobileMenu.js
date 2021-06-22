@@ -1,14 +1,13 @@
-let body = document.getElementById('body');
-let menu = document.getElementById('menu');
-let menuicon = document.getElementsByTagName('i')[0];
-let devname = document.getElementById('devname');
-let portfolio = document.getElementsByTagName("li")[0];
-let about = document.getElementsByTagName('li')[1];
-let contact = document.getElementsByTagName('li')[2];
-let envelope = document.getElementsByTagName('li')[3];
+const body = document.getElementById('body');
+const menu = document.getElementById('menu');
+const menuicon = document.getElementsByTagName('i')[0];
+const devname = document.getElementById('devname');
+const portfolio = document.getElementsByTagName('li')[0];
+const about = document.getElementsByTagName('li')[1];
+const contact = document.getElementsByTagName('li')[2];
+const envelope = document.getElementsByTagName('li')[3];
 
 function mobilemenu() {
-
   menuicon.classList.toggle('fa-bars');
   menuicon.classList.toggle('fa-times');
   devname.classList.toggle('name');
