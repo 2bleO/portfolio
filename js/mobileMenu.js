@@ -28,7 +28,7 @@ function link() {
     menu.className = 'desktop-menu';
   }
   if (menuicon.className === 'fa fa-times') {
-    menuicon.className = 'fa fa-bars";
+    menuicon.className = 'fa fa-bars';
   } else {
     menuicon.className = 'fa fa-bars';
   }
