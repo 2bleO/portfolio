@@ -10,7 +10,7 @@
 }
 
 html {
-  min-width: 327px;
+  width: auto;
 }
 
 body {
@@ -82,17 +82,17 @@ header {
 }
 
 .mobile-menu ul {
-  margin: 0px 24px;
+  margin: 0 24px;
 }
 
 .mobile-menu li {
   list-style: none;
   padding: 15px;
-  border-bottom: 1px solid #6F6C6B;
+  border-bottom: 1px solid #6f6c6b;
 }
 
 .mobile-menu a {
-  color: #FFF5E1;
+  color: #fff5e1;
   text-decoration: none;
   font-family: inter, sans-serif;
   font-weight: 700;
