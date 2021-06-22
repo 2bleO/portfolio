@@ -16,8 +16,7 @@ function mobilemenu() {
   menu.classList.toggle('mobile-menu');
   body.classList.toggle('scroll');
   body.classList.toggle('noscroll');
-  envelope.classList.toggle('fa-envelope');
-  envelope.classList.toggle('hide');
+  envelope.className = 'hide';
 }
 
 function link() {
@@ -40,11 +39,6 @@ function link() {
     body.className = 'scroll';
   } else {
     body.className = 'scroll';
-  }
-  if (envelope.className === 'hide') {
-    envelope.className = 'fa-envelope';
-  } else {
-    envelope.className = 'fa-envelope';
   }
 }
 
