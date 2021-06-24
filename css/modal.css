@@ -1,31 +1,33 @@
 /* popup */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 #modal_container {
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-color: #0000007e;
-  position: fixed;
-  z-index: 500;
+  background-color: #0008;
+  z-index: 1000;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #popup_container {
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  width: auto;
-  height: auto;
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  margin: 60px 16px 16px 16px;
-  padding: 16px;
-  background-color: white;
-  z-index: 1000;
+  position: absolute;
+  background-color: #fff;
+  margin: 40px 10px;
+  padding: 10px;
 }
 
 #modalHeader {
@@ -38,20 +40,17 @@
 #modalTitle {
   font-family: roboto, sans-serif;
   font-weight: bold;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 28px;
+  line-height: 40px;
   color: #172b4d;
-  margin-top: 16px;
-  margin-bottom: 16px;
 }
 
 #modalTech {
   display: flex;
   gap: 12px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  list-style: none;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 #modalTech li {
@@ -66,92 +65,121 @@
   padding: 10px;
 }
 
+#img_desc {
+  overflow: hidden;
+}
+
 #modalImage {
-  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 #modalDesc {
-  margin-top: 24px;
+  margin-top: 20px;
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 20px;
   color: #344563;
   margin-bottom: 16px;
 }
 
 #modalButtons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 #modalButtonLive,
 #modalButtonSource {
   padding: 12px;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 20px;
   background: #ff6b00;
   font-weight: bold;
   border: none;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   align-self: flex-start;
+  margin-bottom: 5px;
 }
 
 #modalButtons a {
   color: black;
   text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 #modalButtonLive i {
   transform: rotate(40deg);
 }
 
-/* Media Queries */
-
-@media (min-width: 500px) {
+@media (min-width: 375px) {
   #popup_container {
-    max-height: 621px;
+    margin: 60px 16px;
+    padding: 16px;
   }
 
-  #img_desc {
+  #modalTitle {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  #modalTech {
     display: flex;
-    flex-direction: row;
-    max-height: 448px;
+    gap: 12px;
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
-  #desc_butt {
-    padding-left: 10px;
+  #modalTech li {
+    font-size: 13px;
+    line-height: 10px;
+    padding: 10px;
   }
 
   #modalDesc {
-    font-size: 11px;
-    line-height: 20px;
-  }
-
-  #modalButtons {
-    justify-content: flex-start;
-  }
-
-  #modalButtonLive,
-  #modalButtonSource {
-    margin: 3.5px;
-    padding: 10px;
+    margin-top: 5px;
     font-size: 14px;
     line-height: 20px;
+    margin-bottom: 1px;
+  }
+}
+
+@media (min-width: 420px) {
+  #img_desc {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #modalImage {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 550px) {
+  #modalImage {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 600px) {
+  #modalImage {
+    max-width: 70%;
   }
 }
 
 @media (min-width: 768px) {
-  #popup_container {
-    max-height: 631px;
-  }
-
   #img_desc {
     display: grid;
     grid-template-columns: 60% 40%;
-    max-height: 421px;
+    gap: 10px;
+  }
+
+  #modalImage {
+    max-width: 100%;
   }
 
   #modalDesc {
@@ -165,23 +193,21 @@
   }
 }
 
-@media (min-width: 1024px) {
-  #modal_container {
-    padding: 100px;
-  }
-
-  #modalImage {
-    max-height: 421px;
-  }
-
-  #modalDesc {
-    font-size: 16px;
-    line-height: 30px;
-    padding-left: 10px;
+@media (min-width: 800px) {
+  #modalButtons {
+    display: flex;
+    justify-content: flex-start;
   }
 
   #modalButtonLive,
   #modalButtonSource {
+    margin: 12px;
+  }
+}
+
+@media (min-width: 900px) {
+  #modalDesc {
     font-size: 17px;
+    line-height: 30px;
   }
 }

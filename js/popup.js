@@ -104,6 +104,8 @@ const metPopup = {
       .appendChild(document.createElement('BUTTON'))
       .setAttribute('id', 'modalButtonSource');
     propPopup.modalBtnSource = document.getElementById('modalButtonSource');
+    propPopup.modalBtnLive.setAttribute('class', 'btn1');
+    propPopup.modalBtnSource.setAttribute('class', 'btn1');
     propPopup.modalBtnLive.innerHTML = '   <a href="#">See Live    <i class="fas fa-power-off"></i></a>';
     propPopup.modalBtnSource.innerHTML = '   <a href="#">See Source    <i class="fab fa-github"></i></a>';
     // stop scroll //
