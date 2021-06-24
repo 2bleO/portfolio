@@ -9,7 +9,6 @@
     modalImage: null,
     projTech: null,
     popup_container: null,
-    imageSrc: 'img/Snapshoot_Portfolio.png',
     parent: null,
     modal_container: null,
     clonedTech: null,
@@ -21,7 +20,7 @@
     modalBtnSource: null,
     img_desc: null,
     desc_butt: null,
-  }
+  };
 
   const metPopup = {
 
@@ -31,12 +30,12 @@
       }
     },
 
-    getParent: function(){
+    getParent: function () {
       propPopup.parent = this.parentElement;
       metPopup.popup(propPopup.parent);
     },
 
-    popup: function(parent){
+    popup: function (parent) {
       propPopup.bodyDOM.appendChild(document.createElement('DIV')).setAttribute('id', 'modal_container');
       propPopup.modal_container = document.getElementById('modal_container');
       propPopup.modal_container.appendChild(document.createElement('DIV')).setAttribute('id', 'popup_container');
@@ -44,7 +43,7 @@
 
       propPopup.popup_container.appendChild(document.createElement('DIV')).setAttribute('id', 'modalHeader');
       propPopup.modalHeader = document.getElementById('modalHeader');
-      //Header//
+      // Header //
       propPopup.modalHeader.appendChild(document.createElement('H3')).setAttribute('id', 'modalTitle');
       propPopup.modalTitle = document.getElementById('modalTitle');
       propPopup.modalTitle.innerText = propPopup.projTitle;
@@ -53,12 +52,12 @@
       propPopup.modalCloseBtn = document.getElementById('modalClose');
       propPopup.modalCloseBtn.innerHTML = '<i class="fas fa-times"></i>';
       propPopup.modalCloseBtn.addEventListener('click', metPopup.close);
-      //Technologies//
+      // Technologies //
       propPopup.projTech = parent.getElementsByTagName('UL')[0];
       propPopup.clonedTech = propPopup.projTech.cloneNode(true);
       propPopup.popup_container.appendChild(propPopup.clonedTech).setAttribute('id', 'modalTech');
       propPopup.clonedTech.className = '';
-      // Image and Description Ccontainer//
+      // Image and Description Ccontainer //
       propPopup.popup_container.appendChild(document.createElement('DIV')).setAttribute('id', 'img_desc');
       propPopup.img_desc = document.getElementById('img_desc');
 
@@ -72,7 +71,7 @@
       propPopup.desc_butt.appendChild(document.createElement('P')).setAttribute('id', 'modalDesc');
       propPopup.modalDescription = document.getElementById('modalDesc');
       propPopup.modalDescription.innerText = propPopup.projDescription;
-      // Buttons//
+      // Buttons //
       propPopup.desc_butt.appendChild(document.createElement('DIV')).setAttribute('id', 'modalButtons');
       propPopup.modalButtons = document.getElementById('modalButtons');
 
@@ -82,7 +81,7 @@
       propPopup.modalBtnSource = document.getElementById('modalButtonSource');
       propPopup.modalBtnLive.innerHTML = '   <a href="#">See Live    <i class="fas fa-power-off"></i></a>';
       propPopup.modalBtnSource.innerHTML = '   <a href="#">See Source    <i class="fab fa-github"></i></a>';
-      //stop scroll//
+      // stop scroll //
       if (propPopup.bodyDOM.className === 'scroll') {
         propPopup.bodyDOM.className = 'noscroll';
       } else {
