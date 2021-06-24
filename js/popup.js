@@ -62,8 +62,8 @@ const metPopup = {
     propPopup.modalCloseBtn.innerHTML = '<i class="fas fa-times"></i>';
     propPopup.modalCloseBtn.addEventListener('click', metPopup.close);
     // Technologies //
-    propPopup.projTech = parent.getElementsByTagName('UL')[0];
-    propPopup.clonedTech = propPopup.projTech.cloneNode(true);
+    propPopup.projTech = parent.getElementsByTagName('UL');
+    propPopup.clonedTech = propPopup.projTech[0].cloneNode(true);
     propPopup.popup_container
       .appendChild(propPopup.clonedTech)
       .setAttribute('id', 'modalTech');
