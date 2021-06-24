@@ -59,7 +59,7 @@
       propPopup.clonedTech = propPopup.projTech.cloneNode(true);
       propPopup.popup_container.appendChild(propPopup.clonedTech).setAttribute('id', 'modalTech');
       propPopup.clonedTech.className = '';
-      // Image and Description//
+      // Image and Description Ccontainer//
       propPopup.popup_container.appendChild(document.createElement('DIV')).setAttribute('id', 'img_desc');
       propPopup.img_desc = document.getElementById('img_desc');
 
