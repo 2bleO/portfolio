@@ -1,5 +1,4 @@
-(function () {
-  const propPopup = {
+const propPopup = {
     bodyDOM: document.getElementsByTagName('body')[0],
     pressBtn: document.getElementsByClassName('projectBtn'),
     projTitle: 'Multi Post Stories',
@@ -25,8 +24,8 @@
   const metPopup = {
 
     start: function () {
-      for (let prop in propPopup.pressBtn) {
-        propPopup.pressBtn[prop].addEventListener('click', metPopup.getParent);
+      for (let i = 0; i < propPopup.pressBtn.length; i++) {
+        propPopup.pressBtn[i].addEventListener('click', metPopup.getParent);
       }
     },
 
@@ -98,5 +97,4 @@
       }
     },
   };
-  metPopup.start();
-}());
+  metPopup.start ();
