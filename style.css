@@ -10,7 +10,7 @@
 }
 
 html {
-  width: auto;
+  min-width: 327px;
 }
 
 body {
@@ -297,7 +297,7 @@ h2 {
   box-sizing: border-box;
 }
 
-.papd {
+.project {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -307,7 +307,7 @@ h2 {
   margin-top: 24px;
 }
 
-.papd h3 {
+.project h3 {
   color: #fff;
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
@@ -320,7 +320,7 @@ h2 {
   margin-bottom: 12px;
 }
 
-.papd p {
+.project p {
   color: #fff;
   font-family: Inter, sans-serif;
   font-style: normal;
@@ -355,7 +355,7 @@ h2 {
   color: #fff;
 }
 
-.papd button {
+.project button {
   margin: 0;
   height: 48px;
   color: black;
@@ -384,7 +384,7 @@ h2 {
   margin-bottom: 209px;
 }
 
-.papd button:hover {
+.project button:hover {
   color: #f55800;
   background: #1c1a19;
   box-sizing: border-box;
@@ -656,7 +656,7 @@ footer {
     margin-bottom: 100px;
   }
 
-  .papd {
+  .project {
     height: 435px;
     justify-content: flex-end;
   }
