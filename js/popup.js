@@ -87,10 +87,9 @@
       } else {
         propPopup.bodyDOM.className = 'noscroll';
       }
-
     },
 
-    close: function() {
+    close: function () {
       propPopup.bodyDOM.removeChild(propPopup.modal_container);
       if (propPopup.bodyDOM.className === 'noscroll') {
         propPopup.bodyDOM.className = 'scroll';
@@ -98,8 +97,6 @@
         propPopup.bodyDOM.className = 'scroll';
       }
     },
-  }
-
-metPopup.start();
-
-}())
+  };
+  metPopup.start();
+}());
