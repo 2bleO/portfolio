@@ -25,8 +25,8 @@
   const metPopup = {
 
     start: function () {
-      for (let i = 0; i < propPopup.pressBtn.length; i++) {
-        propPopup.pressBtn[i].addEventListener('click', metPopup.getParent);
+      for (let prop in propPopup.pressBtn) {
+        propPopup.pressBtn[prop].addEventListener('click', metPopup.getParent);
       }
     },
 
