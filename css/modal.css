@@ -115,10 +115,11 @@
   #popup_container {
     max-height: 621px;
   }
+
   #img_desc {
-      display: flex;
-      flex-direction: row;
-      max-height: 448px;
+    display: flex;
+    flex-direction: row;
+    max-height: 448px;
   }
 
   #desc_butt {
@@ -126,9 +127,8 @@
   }
 
   #modalDesc {
-    margin-top: 0px;
     font-size: 11px;
-    line-height: 20px
+    line-height: 20px;
   }
 
   #modalButtons {
@@ -137,10 +137,10 @@
   
   #modalButtonLive,
   #modalButtonSource {
-    margin: 3.5px;
-    padding: 10px;
-    font-size: 14px;
-    line-height: 20px;
+  margin: 3.5px;
+  padding: 10px;
+  font-size: 14px;
+  Line-height: 20px;
 }
 }
 
@@ -148,14 +148,17 @@
   #popup_container {
     max-height: 631px;
   }
+
   #img_desc {
     display: grid;
     grid-template-columns: 60% 40%;
     max-height: 421px;
   }
+
   #modalDesc {
     font-size: 17px;
   }
+
   #desc_butt {
     display: flex;
     flex-direction: column;
@@ -167,16 +170,19 @@
   #modal_container {
     padding: 100px;
   }
+
   #modalImage {
     max-height: 421px;
   }
+
   #modalDesc {
     font-size: 16px;
     line-height: 30px;
     padding-left: 10px;
   }
+
   #modalButtonLive,
   #modalButtonSource {
-    font-size: 17px;
+  font-size: 17px;
 }
 }
