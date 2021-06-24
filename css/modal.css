@@ -1,0 +1,170 @@
+/* popup */
+
+#modal_container {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #979493a1;
+  position: fixed;
+  z-index: 500;
+}
+
+#popup_container {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: Auto;
+  height: auto;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  margin: 60px 16px 16px 16px;
+  padding: 16px;
+  background-color: white;
+  z-index: 1000;
+  /*justify-content: space-between;*/
+}
+
+#modalHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#modalTitle {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172B4D;
+  margin: 16px 0px;
+}
+
+#modalTech {
+  display: flex;
+  gap: 12px;
+  padding: 12px 0;
+  margin: 16px 0px
+}
+
+#modalTech li {
+  border: 1px solid black;
+  color: #3C3A39;
+  list-style: none;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  padding: 10px;
+}
+
+#modalImage {
+  width: 100%;
+}
+
+#modalDesc {
+  margin-top: 24px;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  margin-bottom: 16px;
+}
+
+#modalButtons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#modalButtonLive,
+#modalButtonSource {
+  padding: 12px;
+  font-size: 17px;
+  line-height: 24px;
+  background: #ff6b00;
+  font-weight: bold;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  align-self: flex-start;
+}
+
+#modalButtons a{
+  color: black;
+  text-decoration: none;
+}
+
+#modalButtonLive i {
+  transform: rotate(40deg);
+}
+
+/*Media Queries*/
+
+@media (min-width: 500px) {
+  #img_desc {
+      display: flex;
+      flex-direction: row;
+      max-height: 448px;
+  }
+
+  #desc_butt {
+    padding-left: 10px;
+  }
+
+  #modalDesc {
+    margin-top: 0px;
+    font-size: 11px;
+    line-height: 20px
+  }
+
+  #modalButtons {
+    justify-content: flex-start;
+  }
+  
+  #modalButtonLive,
+  #modalButtonSource {
+    margin: 3.5px;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 20px;
+}
+}
+
+@media (min-width: 768px) {
+  #img_desc {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+  #modalDesc {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1024px) {
+  
+  #popup_container {
+    margin: 0 auto;
+  }
+  #modalDesc {
+    font-size: 16px;
+    line-height: 30px;
+    padding-left: 10px;
+  }
+  #modalButtonLive,
+  #modalButtonSource {
+    font-size: 17px;
+}
+  #desc_butt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
