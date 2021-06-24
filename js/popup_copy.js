@@ -1,5 +1,4 @@
-(function(){
-
+(function () {
   const propPopup = {
     bodyDOM: document.getElementsByTagName('body')[0],
     pressBtn: document.getElementsByClassName('projectBtn'),
@@ -17,7 +16,7 @@
     modalHeader: null,
     modalTitle: null,
     modalCloseBtn: null,
-    modalButtons:null,
+    modalButtons: null,
     modalBtnLive: null,
     modalBtnSource: null,
     img_desc: null,
@@ -26,7 +25,7 @@
 
   const metPopup = {
 
-    start: function(){
+    start: function () {
       for (let i = 0; i < propPopup.pressBtn.length; i++) {
         propPopup.pressBtn[i].addEventListener('click', metPopup.getParent);
       }
